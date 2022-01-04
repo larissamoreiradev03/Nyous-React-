@@ -8,7 +8,7 @@ pipeline{
 
             steps{
 
-                git 'https://github.com/Meu-Bot/meu-bot-email.git'
+                git 'https://github.com/larissamoreiradev03/Nyous-React-.git'
 
             }
 
