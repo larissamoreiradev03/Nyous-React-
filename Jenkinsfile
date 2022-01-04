@@ -31,7 +31,7 @@ pipeline{
 
         stage('SonarQube analysis') {
 
-//    def scannerHome = tool 'SonarScanner 4.0';
+      def scannerHome = tool 'SonarScanner 4.0';
 
             steps{
 
@@ -41,7 +41,9 @@ pipeline{
 
 //      sh "${scannerHome}/bin/sonar-scanner"
 
-                    sh "npm run sonar"
+
+        sh "${scannerHome}/bin/sonar-scanner"
+
 
                 }
 
