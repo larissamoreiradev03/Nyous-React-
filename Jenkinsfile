@@ -24,6 +24,7 @@ pipeline{
             steps{
 
                 sh 'npm install'
+                sh 'echo "PASSOU PELO NPM INSTALL"'
 
             }
 
