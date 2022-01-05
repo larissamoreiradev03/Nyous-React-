@@ -33,7 +33,7 @@ pipeline{
       steps {
         script {
           // requires SonarQube Scanner 2.8+
-          scannerHome = tool 'SonarQube Scanner 2.8'
+          scannerHome = tool 'SonarQubeScanner-9.2.1.49989'
         }
         withSonarQubeEnv('SonarQube Scanner') {
           sh "npm audit fix"
