@@ -22,8 +22,7 @@ pipeline{
        stage('Build'){
 
             steps{
-                sh 'npm cache clean'
-                sh 'npm install'
+                sh 'npm install -g --force'
                 sh 'echo "PASSOU PELO NPM INSTALL"'
 
             }
